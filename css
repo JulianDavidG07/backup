@@ -1,0 +1,254 @@
+html, body {
+    height:100%;
+}
+
+
+body { 
+    background: url(https://mba.joikret.com/wp-content/uploads/2022/08/Form-UC.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background__form .ct-section-inner-wrap {
+
+	padding-bottom: 90px !important;
+}
+
+
+
+.forminator-row {
+    padding-top: 9em !important;
+}
+
+.forminator-pagination-footer {
+	justify-content: flex-start !important;
+    gap: 16px !important;
+	margin-bottom: 8em !important;
+}
+
+#section-1 .forminator-field .forminator-title {
+	font-size: 32px !important;
+    font-weight: 500 !important;
+	color: #0176DE!important;
+}
+
+
+#section-1 .forminator-field .forminator-subtitle {
+	font-size: 34px !important;
+	color: #0176DE!important;
+    font-weight: 900 !important;
+	margin-top: 0 !important;
+}
+
+#section-1 .forminator-field {
+	background: white;
+	clip-path: polygon(0 0, 94% 0%, 100% 100%, 0% 100%);
+	padding: 10px 50px 10px 30px;
+	display: inline-block;
+}
+
+.forminator-pagination-progress {
+	position: fixed;
+	z-index: 9999;
+	margin-bottom: 0 !important;
+    bottom: 2%;
+	left: 3%;
+    right: 3%;
+    width: -webkit-fill-available;
+}
+
+.forminator-pagination-progress .forminator-progress-label {
+    color: white!important;
+    font-weight: 900 !important;
+}
+
+body .forminator-ui.forminator-custom-form[data-design=material] 
+.forminator-multiselect .forminator-option input {
+	width: 15px!important;
+	height: 15px!important;
+	overflow: auto !important;
+	border: 1px solid #173f8a !important;
+	position: absolute !important;
+	left: 8px !important;
+	top: 12px !important;
+	white-space: nowrap!important;
+	padding: 0!important;
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+	clip-path: none !important;
+}
+
+
+/*******************************************/
+
+/**************** Custom Checkbox ******************/
+    
+.forminator-multiselect .forminator-option {
+	font-weight: bold;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+	padding-left: 28px !important;
+}
+
+.forminator-multiselect .forminator-option + .forminator-option {
+  margin-top: 1em;
+}
+
+
+.forminator-multiselect input[type=checkbox] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  -moz-appearance: none;
+       appearance: none;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: inline-grid;
+  place-content: center;
+}
+
+
+.forminator-multiselect input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #03122E;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.forminator-multiselect input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+.forminator-multiselect input[type=checkbox]:focus {
+  outline: max(2px, 0.15em) solid #03122E;
+  outline-offset: max(2px, 0.15em);
+}
+
+
+/**************** END Custom Checkbox ******************/
+@media (max-width: 782px) {
+	.forminator-pagination-footer .forminator-button {
+		width: auto!important;
+		margin-bottom: 0 !important;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.forminator-row {
+		padding-top: 7em !important;
+	}
+
+	.forminator-pagination-footer {
+		margin-bottom: 6em !important;
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+
+body .forminator-ui.forminator-custom-form[data-design=material] 
+.forminator-multiselect .forminator-option input {
+	width: 15px!important;
+	height: 15px!important;
+	overflow: auto !important;
+	border: 1px solid #173f8a !important;
+	position: absolute !important;
+	left: 8px !important;
+	top: 12px !important;
+	white-space: nowrap!important;
+	padding: 0!important;
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+	clip-path: none !important;
+}
+
+/**************** Custom Checkbox ******************/
+    
+.forminator-multiselect .forminator-option {
+	font-weight: bold;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+	padding-left: 28px !important;
+}
+
+.forminator-multiselect .forminator-option + .forminator-option {
+  margin-top: 1em;
+}
+
+
+.forminator-multiselect input[type=checkbox] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  -moz-appearance: none;
+       appearance: none;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: inline-grid;
+  place-content: center;
+}
+
+
+.forminator-multiselect input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #173f8a;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.forminator-multiselect input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+.forminator-multiselect input[type=checkbox]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+
+/**************** END Custom Checkbox ******************/
+
+
+/********* Estilos salto de linea al insertar el caracter | en un label **********/
+.forminator-option span {
+    display: block;
+}
+
+
+
+/************ Estilos del progress bar al darle click al boton continuar del inicio ***************/
+.forminator-pagination-progress {
+	display: none !important;
+}
+
+.forminator-pagination-progress.block {
+    display: flex !important;
+}
