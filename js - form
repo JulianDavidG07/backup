@@ -1,0 +1,46 @@
+// NO Autocompletar sugerencias del Form
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+	document.getElementById("forminator-module-5").setAttribute("autocomplete", "off");
+});
+
+
+// Agregar salto de linea de los label del form cuando de agrega el caracter | 
+$(".forminator-option").each(function(){
+    var input = $(this).find("input");
+var self = this;
+  var data = $(self).text();
+  var a = data.split("|")
+    
+$(self).text("");
+    $(self).html(input)
+    $(a).each(function(i,e){
+
+       $(self).append("<span>"+e+"</span>");
+        
+    })  
+})
+
+
+// Disable Progress in Welcome Page
+$(window).on('load', function() {
+
+	console.log("load")
+
+	$(".forminator-button").click(function(){
+
+		$(".forminator-pagination-progress").addClass("block");
+
+	})
+
+})
+
+
+document.addEventListener("DOMContentLoaded", () => {
+	$('#forminator-field-text-1').mask('0Z.000.000-A', {
+		translation:  {
+			'A': {pattern: /[A-Za-z0-9]/},
+			'Z': {pattern: /[0-9]/, optional: true}
+		}
+	});
+});
